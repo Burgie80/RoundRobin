@@ -1,3 +1,12 @@
+% ------------------------
+% Nombre: worker.erl
+% Descripción: Implementa un proceso trabajador el cual ejecuta un ciclo que continuamente espera mensajes (tareas) y simula procesarlos
+% Equipo: Badillo Cruz Ferran
+%         López Machado Oscar Roberto
+%         Morales Calvo Ángel Omar
+%         Galvan Godinez Antonio de Jesus
+% ------------------------
+
 -module(worker).
 -export([start/0, loop/0]).
 
@@ -15,4 +24,3 @@ loop() ->
             io:format("Mensaje desconocido recibido~n"),
             loop()
     end.
-

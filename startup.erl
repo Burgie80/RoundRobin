@@ -1,3 +1,13 @@
+% ------------------------
+% Nombre: load_balancer.erl
+% Descripción: Implementa un proceso cliente el cual inicia el balanceador con
+%	       una lista de trabajadores predefinida, y asigna tareas dinámicamente
+% Equipo: Badillo Cruz Ferran
+%         López Machado Oscar Roberto
+%         Morales Calvo Ángel Omar
+%         Galvan Godinez Antonio de Jesus
+% ------------------------
+
 -module(startup).
 -export([start_system/0]).
 

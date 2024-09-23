@@ -1,3 +1,14 @@
+% ------------------------
+% Nombre: load_balancer.erl
+% Descripción: Implementa el balanceador de carga como un proceso gen_server
+%	       con la funcionalidad personalizada para registrar trabajadores
+%	       y asignar tareas dinámicamente
+% Equipo: Badillo Cruz Ferran
+%	  López Machado Oscar Roberto 
+%	  Morales Calvo Ángel Omar
+%	  Galvan Godinez Antonio de Jesus
+% ------------------------
+
 -module(load_balancer).
 -behaviour(gen_server).
 
@@ -24,7 +35,7 @@ add_task(Task) ->
 %% Manejo de las tareas: asignación a los trabajadores según round-robin
 handle_cast({add_task, Task}, {Workers, Index}) ->
     Worker = lists:nth(Index + 1, Workers),  %% Selecciona el trabajador según el índice
-    WorkerName = "Worker" ++ integer_to_list(Index + 1),
+    WorkerName = "Worker" ++ integer_to_list(Index + 1),  %% Asigna un nombre al trabajador según su índice
     Worker ! {process_task, Task, WorkerName},            %% Envía la tarea al trabajador seleccionado
     NextIndex = (Index + 1) rem length(Workers),  %% Actualiza el índice para la siguiente tarea
     {noreply, {Workers, NextIndex}}.
