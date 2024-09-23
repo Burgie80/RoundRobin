@@ -5,9 +5,9 @@ Implementación de un balanceador de carga simple utilizando la estrategia round
 Erlang/OTP instalado en tu sistema.
 
 ## Archivos
-`load_balancer.erl`: Implementa el balanceador de carga.
-`worker.erl`: Define el comportamiento de los trabajadores.
-`startup.erl`: Permite iniciar el sistema con trabajadores y agregar tareas.
+`load_balancer.erl`: Implementa el balanceador de carga.\
+`worker.erl`: Define el comportamiento de los trabajadores.\
+`startup.erl`: Permite iniciar el sistema con trabajadores y agregar tareas.\
 
 ## Cómo ejecutar
 ### Compilar los módulos
