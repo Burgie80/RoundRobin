@@ -150,3 +150,6 @@ Al ejecutar `startup:start_system/0`, el sistema asignará las tareas task1, tas
 ```
 
 Cada trabajador procesa las tareas en orden round-robin, con su nombre asignado de forma dinámica por el balanceador.
+
+## Asciinema
+[![asciicast](https://asciinema.org/a/677460.svg)](https://asciinema.org/a/677460)
