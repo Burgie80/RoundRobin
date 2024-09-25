@@ -1,6 +1,12 @@
 # RoundRobin
 Implementación de un balanceador de carga simple utilizando la estrategia round-robin escrito en Erlang.
 
+## Integrantes
+- Ferran Badillo Cruz 21211912
+- Oscar Roberto Lopez Machado 21211978
+- Angel Omar Morales Calvo 21212000
+- 
+
 ## Requisitos
 Erlang/OTP instalado en tu sistema.
 
