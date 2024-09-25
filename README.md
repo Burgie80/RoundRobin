@@ -5,7 +5,7 @@ Implementación de un balanceador de carga simple utilizando la estrategia round
 - Ferran Badillo Cruz 21211912
 - Oscar Roberto Lopez Machado 21211978
 - Angel Omar Morales Calvo 21212000
-- 
+- Galvan Godinez Antonio de Jesus 20211777
 
 ## Requisitos
 Erlang/OTP instalado en tu sistema.
